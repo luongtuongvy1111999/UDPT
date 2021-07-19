@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home | Check what new information today</title>
+
+<?php
+
+require_once ('inc/header.phtml');
+
+?>
+
+
+<!-- Header
+================================================= -->
+
+<!--Header End-->
+
+<div id="page-contents">
+    <div class="container">
+        <div class="row">
+
+            <!-- Newsfeed Common Side Bar Left.
+            ================================================= -->
+            <div class="col-md-3 static">
+                <div class="profile-card">
+                    <img src="images/users/avatardefault.jpg" alt="user" class="profile-photo" />
+                    <h5><a href="timeline.html" class="text-white">Anonymous</a></h5>
+                    <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 0 Answer </a>
+                </div><!--profile card ends-->
+                <ul class="nav-news-feed">
+                    <li><i class="icon ion-ios-paper"></i><div><a href="newsfeed.html">Books</a></div></li>
+                    <li><i class="icon ion-ios-people"></i><div><a href="newsfeed-people-nearby.html">Technology</a></div></li>
+                    <li><i class="icon ion-ios-people-outline"></i><div><a href="newsfeed-friends.html">Science</a></div></li>
+                    <li><i class="icon ion-chatboxes"></i><div><a href="newsfeed-messages.html">Language</a></div></li>
+                    <li><i class="icon ion-images"></i><div><a href="newsfeed-images.html">Health</a></div></li>
+                    <li><i class="icon ion-ios-videocam"></i><div><a href="newsfeed-videos.html">Movies</a></div></li>
+                </ul>
+            </div>
+            <div class="col-md-7">
+
+                <!-- Post Create Box
+                ================================================= -->
+                <div class="create-post">
+                    <div class="">
+                        <div class="">
+                            <a class=" btn btn-primary "  href="index.php" >+ Back to Index </a>
+
+                            <div class="form-popup" id="myForm">
+                                <form action="" class="form-container" method="POST">
+                                    <h3  > <label for="name">Header</label></h3>
+                                    <!--<input  id="name" type="text" name="name" width="280" required/>-->
+                                    <textarea id="name" rows="5" cols="270" placeholder="Write your question" name="header"></textarea>
+                                    <div class="flax">
+                                        <div class="item">
+                                            <h3> <p>Categories</p></h3>
+                                            <select name="categories"  >
+                                                <option selected value="" disabled selected ></option>
+                                                <option value="Books" >Books</option>
+                                                <option value="Technology">Technology</option>
+                                                <option value="Science">Science</option>
+                                                <option value="Language">Language</option>
+                                                <option value="Health">Health</option>
+                                                <option value="Movies">Movies</option>
+                                            </select>
+                                        </div>
+                                        <div class="item">
+                                            <h3> <p>Tags</p></h3>
+                                            <select  name="tags"  >
+                                                <option selected value="" disabled selected name="tags"></option>
+                                                <option value="TV-SHOWS" >TV-SHOWS</option>
+                                                <option value="HBO">HBO</option>
+                                                <option value="NETFLIX">NETFLIX</option>
+                                                <option value="SPANISH">SPANISH</option>
+                                                <option value="PHP">PHP</option>
+                                                <option value="AJAX">AJAX</option>
+                                                <option value="MVC">MVC</option>
+                                                <option value="FRAMEWORK">FRAMEWORK</option>
+                                                <option value="BOOKS">BOOKS</option>
+                                                <option value="BIOLOGY">BIOLOGY</option>
+                                                <option value="ENGLISH">ENGLISH</option>
+                                                <option value="ASP.NET">ASP.NET</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <h3>  <label for="instructions">Detail</label></h3>
+                                        <textarea id="instructions" rows="10" cols="270" placeholder="Write detail question" name="detail"></textarea>
+                                    </div>
+                                    <br>
+                                    <div class="flax">
+                                        <button class="btn btn-primary  " type="submit"name = "add_post" href="index.php" >Submit</button>
+
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div><!-- Post Create Box End-->
+
+
+            </div>
+
+            <!-- Newsfeed Common Side Bar Right
+            ================================================= -->
+            <div class="col-md-2 static">
+                <div class="suggestions" id="sticky-sidebar">
+                    <h4 class="grey">Member Of Month</h4>
+                    <div class="follow-user">
+                        <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
+                        <div>
+                            <h5><a href="timeline.html">Cris Haris</a></h5>
+                            <a  class="text-green">0 Answers </a>
+                        </div>
+                    </div>
+                    <div class="follow-user">
+                        <img src="images/users/user-12.jpg" alt="" class="profile-photo-sm pull-left" />
+                        <div>
+                            <h5><a href="timeline.html">Cris Haris</a></h5>
+                            <a href="#" class="text-green">Add friend</a>
+                        </div>
+                    </div>
+                    <div class="follow-user">
+                        <img src="images/users/user-13.jpg" alt="" class="profile-photo-sm pull-left" />
+                        <div>
+                            <h5><a href="timeline.html">Brian Walton</a></h5>
+                            <a href="#" class="text-green">Add friend</a>
+                        </div>
+                    </div>
+                    <div class="follow-user">
+                        <img src="images/users/user-14.jpg" alt="" class="profile-photo-sm pull-left" />
+                        <div>
+                            <h5><a href="timeline.html">Olivia Steward</a></h5>
+                            <a href="#" class="text-green">Add friend</a>
+                        </div>
+                    </div>
+                    <div class="follow-user">
+                        <img src="images/users/user-15.jpg" alt="" class="profile-photo-sm pull-left" />
+                        <div>
+                            <h5><a href="timeline.html">Sophia Page</a></h5>
+                            <a href="#" class="text-green">Add friend</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer
+================================================= -->
+<?php
+
+require_once 'inc/footer.phtml';
+
+
+?>
+
+
+</body>
+</html>
